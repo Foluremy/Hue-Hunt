@@ -45,12 +45,18 @@ To run Hue Hunt locally, follow these steps:
 
 Clone the repository:
 
+bash
+Copy
 git clone https://github.com/your-username/hue-hunt.git
 Navigate to the project directory:
 
+bash
+Copy
 cd hue-hunt
 Open the index.html file in your browser:
 
+bash
+Copy
 open index.html
 Start playing! 🎮
 
@@ -61,19 +67,25 @@ Fork the repository.
 
 Create a new branch for your feature or bugfix:
 
+bash
+Copy
 git checkout -b feature/your-feature-name
 Commit your changes:
 
+bash
+Copy
 git commit -m "Add your message here"
 Push to the branch:
 
+bash
+Copy
 git push origin feature/your-feature-name
 Open a pull request and describe your changes.
 
 ## License 📄
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgements 🙏
+## Acknowledgements 🙏
 Google Fonts for the "Press Start 2P" font.
 
 Open Source Community for inspiration and resources.
