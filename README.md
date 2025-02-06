@@ -43,21 +43,12 @@ Google Fonts: "Press Start 2P" font for a retro gaming aesthetic.
 ## Installation 🛠️
 To run Hue Hunt locally, follow these steps:
 
-Clone the repository:
+Clone the repository: git clone https://github.com/your-username/hue-hunt.git
 
-bash
-Copy
-git clone https://github.com/your-username/hue-hunt.git
-Navigate to the project directory:
+Navigate to the project directory: cd hue-hunt
 
-bash
-Copy
-cd hue-hunt
-Open the index.html file in your browser:
+Open the index.html file in your browser: open index.html
 
-bash
-Copy
-open index.html
 Start playing! 🎮
 
 ## Contributing 🤝
@@ -67,19 +58,12 @@ Fork the repository.
 
 Create a new branch for your feature or bugfix:
 
-bash
-Copy
 git checkout -b feature/your-feature-name
-Commit your changes:
 
-bash
-Copy
-git commit -m "Add your message here"
-Push to the branch:
+Commit your changes: git commit -m "Add your message here"
 
-bash
-Copy
-git push origin feature/your-feature-name
+Push to the branch: git push origin feature/your-feature-name
+
 Open a pull request and describe your changes.
 
 ## License 📄
