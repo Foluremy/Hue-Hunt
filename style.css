@@ -1,0 +1,153 @@
+body {
+    background-color: rgba(245, 245, 245, 0.5);
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.6
+}
+/* Header */
+.header {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.header h1 span {
+    color: red;
+    background-color: black;
+    box-shadow: 5px 5px 2px rgba(255, 0, 0, 0.3);
+}
+
+/* Game Container */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #fff, #ddd);
+    animation: float 2s infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+
+    50% { transform: translateY(10px); }
+}
+
+/* Game Instruction */
+.container .game-instruction {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.container .game-instruction h2 {
+    font-size: 1.5em;
+    font-weight: bold; 
+  }
+
+/* User Score */
+.score {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 1em;
+  }
+  
+/* Color Box */
+.color-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+  }
+  
+/* Color Options */
+.option-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+  
+.option-container .color-option {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+.option-container .color-option:hover {
+    transform: scale(1.1);
+}
+  
+/* Game Status */
+.game-status {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    min-height: 2rem;
+}
+
+  
+/* New Game */
+.container .new-game-button {
+    margin: 20px auto;
+}
+
+.container .new-game-button button{
+    background-color: rgba(0, 0, 0);
+    width: fit-content;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.new-game-button button:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+    color: black;
+  }
+  
+  
+/* Animations */
+.correct-animation {
+    animation: correct 0.5s;
+}
+
+.wrong-animation {
+    animation: wrong 0.5s;
+}
+
+@keyframes correct {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes wrong {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-15px); }
+    75% { transform: translateX(15px); }
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .game-instruction h2 {
+        font-size: 0.8rem;
+    }
+
+    .color-option {
+        width: 40px;
+        height: 40px;
+    }
+}

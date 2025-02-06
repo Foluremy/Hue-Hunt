@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Hue Hunt</title>
+</head>
+<body>
+    <div class="header">
+        <h1><span>H</span>ue <span>H</span>unt</h1>
+    </div>
+    
+    <div class="container">
+        <!-- Game Instruction -->
+        <div class="game-instruction">
+            <h2 data-testid="gameInstructions">Match the color to win!</h2>
+        </div>
+        
+        <!-- User Score -->
+        <div class="score">
+            <h3 data-testid="score">Score: 0</h3>
+        </div>
+        
+        <!-- Color Box-->
+        <div data-testid="colorBox" class="color-box"></div>
+        
+        <!-- Color Options -->
+        <div class="option-container">
+            <button data-testid="colorOption" class="color-option"></button>
+            <button data-testid="colorOption" class="color-option"></button>
+            <button data-testid="colorOption" class="color-option"></button>
+            <button data-testid="colorOption" class="color-option"></button>
+            <button data-testid="colorOption" class="color-option"></button>
+            <button data-testid="colorOption" class="color-option"></button>
+        </div>
+        
+        <!-- Game Status -->
+        <div>
+            <p data-testid="gameStatus" class="game-status"></p>
+        </div>
+        
+        <!-- New Game Button -->
+        <div class="new-game-button">
+            <button data-testid="newGameButton">New Game</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
